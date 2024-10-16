@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# create working and data dirs if not present
+mkdir -p temp
+mkdir -p src/data
+
+# merge all files in a dir into an array, sorted by value of id or another field, results in temp
+jq -s -c 'sort_by(.name)|.' data_src/mercenaries/*.json > temp/mercenaries.json
+jq -s -c 'sort_by(.id)|.' data_src/rarities/*.json > temp/rarities.json
+
+# merge all temp files, with fields named after files
+# -b	- force lf on windows
+# --tab - use tab for indentation
+jq -n -b --tab 'reduce inputs as $s (.; (.[input_filename|ltrimstr("temp/")|rtrimstr(".json")]) += $s)' temp/*.json > src/data/data.json
+
+# minimize data file
+# -c	- compact / minimize file
+jq -c -b . src/data/data.json > src/data/data-min.json
+
+rm -r temp/*
+
+git add src/data/data.json
+git add src/data/data-min.json
