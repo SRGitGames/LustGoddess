@@ -1,0 +1,27 @@
+# Auto-detect text files
+*				text=auto	eol=lf
+
+# git files/dirs
+.gitattributes	text		eol=lf
+.gitconfig		text		eol=lf
+.gitignore		text		eol=lf
+
+# info files
+*.txt			text		eol=lf
+*.md			text		eol=lf
+
+# web files
+*.css			text		eol=lf
+*.htm			text		eol=lf		diff=html
+*.html			text		eol=lf		diff=html
+*.js			text		eol=lf
+*.json			text		eol=lf
+
+# shell scripts and config files
+*.sh			text		eol=lf
+
+# Graphics
+*.ico			binary
+*.jpg			binary
+*.png			binary
+*.svg			text

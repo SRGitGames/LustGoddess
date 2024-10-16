@@ -1,0 +1,10 @@
+[core]
+	autocrlf = false								; hopefully the right choice for this repo to remain purely LF one
+	eol = lf										; force LF as the default, auto (gitattributes) line ending
+	whitespace = trailing-space,space-before-tab	; treat trailing spaces and spaces before tabs as errors
+
+[diff]
+	renames = copies								; git will detect renames and copies
+
+[push]
+	default = matching								; push all branches having the same name on both ends
