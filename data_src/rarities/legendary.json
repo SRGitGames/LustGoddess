@@ -1,0 +1,42 @@
+{
+	"rarity": 4,
+	"name": "Legendary",
+	"upgrades": [
+		{ "gems": 5,	"credits": 600 },
+		{ "gems": 10,	"credits": 900 },
+		{ "gems": 15,	"credits": 1400 },
+		{ "gems": 20,	"credits": 1900 },
+		{ "gems": 40,	"credits": 2500 },
+
+		{ "gems": 60,	"credits": 3500 },
+		{ "gems": 80,	"credits": 5500 },
+		{ "gems": 100,	"credits": 7000 },
+		{ "gems": 120,	"credits": 9000 },
+		{ "gems": 150,	"credits": 11000 },
+
+		{ "gems": 200,	"credits": 14000 },
+		{ "gems": 250,	"credits": 17000 },
+		{ "gems": 320,	"credits": 20000 },
+		{ "gems": 400,	"credits": 24000 },
+		{ "gems": 500,	"credits": 28000 },
+
+		{ "gems": 700,	"credits": 32000 },
+		{ "gems": 850,	"credits": 36000 },
+		{ "gems": 1000,	"credits": 40000 },
+		{ "gems": 1300,	"credits": 44000 },
+		{ "gems": 1700,	"credits": 48000 },
+
+		{ "gems": 2200,	"credits": 52000 },
+		{ "gems": 2900,	"credits": 57000 },
+		{ "gems": 3700,	"credits": 62000 },
+		{ "gems": 4800,	"credits": 68000 },
+		{ "gems": 6000,	"credits": 75000 },
+
+		{ "gems": 6150,	"credits": 80000 },
+		{ "gems": 6300,	"credits": 86000 },
+		{ "gems": 6450,	"credits": 93000 },
+		{ "gems": 6650,	"credits": 101000 },
+		{ "gems": 6900,	"credits": 110000 }
+	],
+	"resets": [ 6, 11, 16, 21, 26, 31, 31 ]
+}
